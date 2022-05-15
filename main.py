@@ -13,10 +13,9 @@ from telegram.ext.filters import Filters
 import requests
 from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove, Update
 
-import Constants
-
 # updater = Updater(
 #     "5199045475:AAHBcN0_bQKNqswNAFPN2U5CgTfhUDYViiM", use_context=True)
+import Constants
 
 CONVERT, PHOTO, FORMAT_TO, BIO = range(4)
 
