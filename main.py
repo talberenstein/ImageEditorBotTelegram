@@ -13,6 +13,8 @@ from telegram.ext.filters import Filters
 import requests
 from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove, Update
 
+import Constants
+
 # updater = Updater(
 #     "5199045475:AAHBcN0_bQKNqswNAFPN2U5CgTfhUDYViiM", use_context=True)
 
@@ -46,7 +48,7 @@ def photo(update: Update, context: CallbackContext) -> int:
 
     headers = {
         "X-RapidAPI-Host": "image-processing4.p.rapidapi.com",
-        "X-RapidAPI-Key": "8ef2ba1dedmsha538a9d5c44aacap1211fdjsn8038ec3f6e29_____NO_KEY"
+        "X-RapidAPI-Key": Constants.API_KEY_SERVICE
     }
     photo_file = update.message.photo[-1].get_file()
     print(photo_file.file_path)
